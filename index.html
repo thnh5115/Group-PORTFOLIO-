@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team 10 - Đại học GTVT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ================= STICKY NAVBAR ================= -->
+  <!-- Added sticky navigation bar with smooth scroll links -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">Team 10</div>
+      <ul class="nav-menu">
+        <li><a href="#banner" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#members" class="nav-link">Members</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= HEADER / BANNER ================= -->
+  <header class="banner" id="banner">
+    <div class="banner-content">
+      <!-- Added floating text animation to banner -->
+      <h1 class="floating-text">Team 10</h1>
+      <p class="banner-subtitle">Đại học GTVT TP.HCM - Web Development Project 2025</p>
+    </div>
+  </header>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="about" id="about">
+    <h2>About Our Team</h2>
+    <p>We are Team 10 from UTH, passionate about technology, web development, and creative collaboration. Our mission is to build modern, clean, and innovative web projects that reflect our learning journey and teamwork.</p>
+  </section>
+
+  <!-- ================= MEMBERS SECTION ================= -->
+  <section class="members" id="members">
+    <h2>Our Members</h2>
+    <div class="member-grid">
+      <!-- Each member card -->
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="images/profile.jpg" alt="Member 1">
+          <span class="member-icon">👨‍💻</span>
+        </div>
+        <h3>Nguyễn Văn Thanh</h3>
+        <p class="member-role">Backend Developer</p>
+        <a href="https://thnh5115.github.io/PORTFOLIO/" class="btn">View Profile</a>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="https://via.placeholder.com/150" alt="Member 2">
+          <span class="member-icon">👨‍💻</span>
+        </div>
+        <h3>Member 2</h3>
+        <p class="member-role">Backend Developer</p>
+        <a href="#" class="btn">View Profile</a>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="https://via.placeholder.com/150" alt="Member 3">
+          <span class="member-icon">👨‍💻</span>
+        </div>
+        <h3>Member 3</h3>
+        <p class="member-role">Frontend Developer</p>
+        <a href="#" class="btn">View Profile</a>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="https://via.placeholder.com/150" alt="Member 4">
+          <span class="member-icon">🎨</span>
+        </div>
+        <h3>Member 4</h3>
+        <p class="member-role">UI/UX Designer</p>
+        <a href="#" class="btn">View Profile</a>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">
+          <img src="https://via.placeholder.com/150" alt="Member 5">
+          <span class="member-icon">📝</span>
+        </div>
+        <h3>Member 5</h3>
+        <p class="member-role">Documentation</p>
+        <a href="#" class="btn">View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECT SECTION ================= -->
+  <section class="project" id="project">
+    <h2>Main Project</h2>
+    <div class="project-box">
+      <p>Our team is currently developing a modern web-based application as part of our academic project — demonstrating our technical and teamwork skills.</p>
+      <a href="#" class="btn btn-gradient">View Details</a>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY SECTION ================= -->
+  <section class="gallery" id="gallery">
+    <h2>Team Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Added gallery items with overlay captions -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x150" alt="Gallery 1">
+        <div class="gallery-overlay">Team 10 moments</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x150" alt="Gallery 2">
+        <div class="gallery-overlay">Team 10 moments</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x150" alt="Gallery 3">
+        <div class="gallery-overlay">Team 10 moments</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x150" alt="Gallery 4">
+        <div class="gallery-overlay">Team 10 moments</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:thanhnv5888@uth.edu.vn">thanhnv5888@uth.edu.vn</a></p>
+    <p>GitHub: <a href="https://github.com/thnh5115">github.com/thnh5115</a></p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit" class="btn btn-gradient">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <!-- Added heart icon and glow effect to footer -->
+    <p>© 2025 — Built with <span class="heart">❤️</span> by Team 10 - Đại học UTH</p>
+  </footer>
+
+  <script>
+    // Smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
